@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Blank Slate</title>
+	<link rel="stylesheet" href="/css/canvas.css" type="text/css">
+</head>
+<body>
+<header>
+	<h1><a href="/">Canvas</a></h1>
+	<p>the tabula rasa of templates</p>
+</header>
+
+<main>
+	<article>
+		<header>
+			<h2>Starting with a blank slate</h2>
+			<p>Michael D Henderson</p>
+			<time datetime="2019-01-17T21:27-07:00">January 17th, 2019</time>
+		</header>
+
+		<p>Canvas is a demonstration of building a site (and a theme) from the ground up.</p>
+		<p>Every step of the path is documented as a commit in the <a href="https://github.com/mdhender/canvas">repo</a>.
+		I'll try to write a new article explaining the "what" and "why" behind the commit.</p>
+		<p>If I do a good job, you'll be able to follow the commits and learn the ins-and-outs of Hugo.</p>
+
+		<h3>The First Commit</h3>
+		<p>This first commit contains a simple landing page.
+		The HTML is pretty bloggish with just a hint of formatting.
+		It uses the CSS from <a href="https://github.com/necolas/normalize.css">Normalize.css</a> to get a consistent look in browsers.
+		We'll be adding style later, once we have a theme in place.
+		The important part (to me) is that it's built up using semantic HTML elements.
+		It's my belief that makes it easier to build up the site using <a href="https://gohugo.io">Hugo</a>.</p>
+
+		<h3>The Footer</h3>
+		<p>The footer of the article is links for navigating between articles.</p>
+		<p>The only complicated bit is the categories and tags.
+		I think of category as topic (or "filed under") and tags as keywords for searching.
+		That will come up when we start</p>
+
+		<footer>
+			<ul><li><a href="/">&laquo;</a></li><li><a href="/">&raquo;</a></li></ul>
+
+			<h4>Topic</h4>
+			<ul><li><a href="/">tutorial</a></li></li></ul>
+			<h4>Keywords</h4>
+			<ul><li><a href="/">hugo</a></li><li><a href="/">site</a></li></ul>
+		</footer>
+	</article>
+
+	<footer>
+		<h4>Recent Posts</h4>
+		<ul><li><a href="/">Home</a></li></ul>
+		<h4>Recent Tweets</h4>
+	</footer>
+</main>
+
+<nav>
+	<ul>
+		<li><a href="/">Blog</a></li>
+		<li><a href="/">Archives</a></li>
+		<li><a href="/">Tags</a></li>
+		<li><a href="/">Categories</a></li>
+		<li><a href="https://github.com/mdhender/canvas">Github</a></li>
+		<li><a href="/">About</a></li>
+	</ul>
+</nav>
+
+<footer>
+	<p>&copy; 2019 - Michael D Henderson</p>
+</footer>
+</body>
+</html>
