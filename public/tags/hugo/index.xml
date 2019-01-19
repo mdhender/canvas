@@ -6,10 +6,21 @@
     <description>Recent content in Hugo on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 15:54:49 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jan 2019 16:14:24 -0700</lastBuildDate>
     
 	<atom:link href="http://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Basic Single Post Layout</title>
+      <link>http://example.org/posts/basic-single-post-layout/</link>
+      <pubDate>Sat, 19 Jan 2019 16:14:24 -0700</pubDate>
+      
+      <guid>http://example.org/posts/basic-single-post-layout/</guid>
+      <description>The basic post is very similar to the home page we just built. I set the page&amp;rsquo;s title to the post&amp;rsquo;s title.
+I removed the range loop. We&amp;rsquo;re only working with a single content file, so it&amp;rsquo;s not needed.
+I replaced the .Summary with .Content to render the entire content file. I moved it flush with the left margin to make it easier for me to debug the layout from the rendered HTML.</description>
+    </item>
     
     <item>
       <title>Cleanup Posts - Round One</title>
