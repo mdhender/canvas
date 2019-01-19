@@ -22,11 +22,11 @@ Before I do, though, I want to clean up the posts that I&amp;rsquo;ve already co
     </item>
     
     <item>
-      <title>Basic List of Posts</title>
-      <link>http://example.org/posts/basic-list-of-posts/</link>
+      <title>Basic Home Page</title>
+      <link>http://example.org/posts/basic-home-page/</link>
       <pubDate>Sat, 19 Jan 2019 13:58:46 -0700</pubDate>
       
-      <guid>http://example.org/posts/basic-list-of-posts/</guid>
+      <guid>http://example.org/posts/basic-home-page/</guid>
       <description>&lt;p&gt;I want my home page to show a list of my posts with the newest posts listed first.&lt;/p&gt;</description>
     </item>
     

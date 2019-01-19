@@ -1,5 +1,5 @@
 ---
-title: "Basic List of Posts"
+title: "Basic Home Page"
 date: 2019-01-19T13:58:46-07:00
 categories: ["posts"]
 tags: ["hugo"]
