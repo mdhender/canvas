@@ -152,18 +152,9 @@ Whether it's friend or foe is up to you.
 Either way, Hugo provides an easy way for you to decide.
 That's through the "magic" of archetype files.
 
-## Postscript: Cleaning up
+### Postscript: Cleaning up
 
-Since I'm ready to publish this post, I edited the `contents/posts/first-look-at-archetypes.md` file and removed the draft flag:
-
-  ---
-  title: "First Look at Archetypes"
-  date: 2019-01-18T15:47:35-07:00
-  ---
-
-I could have set it to false instead.
-
-I also edited the first two posts and linked this one in.
+I edited the first two posts and linked this one in.
 I really need to automate that!
 
 ### Postscript: Some Git Notes
