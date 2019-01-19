@@ -6,10 +6,20 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 13:58:46 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jan 2019 15:54:49 -0700</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cleanup Posts - Round One</title>
+      <link>http://example.org/posts/cleanup-posts-round-one/</link>
+      <pubDate>Sat, 19 Jan 2019 15:54:49 -0700</pubDate>
+      
+      <guid>http://example.org/posts/cleanup-posts-round-one/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m almost to the point of creating layouts for lists and single posts.
+Before I do, though, I want to clean up the posts that I&amp;rsquo;ve already completed.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Basic List of Posts</title>
@@ -17,10 +27,7 @@
       <pubDate>Sat, 19 Jan 2019 13:58:46 -0700</pubDate>
       
       <guid>http://example.org/posts/basic-list-of-posts/</guid>
-      <description>I want my home page to show a list of my posts with the newest posts listed first.
-The layout for this uses sections to wrap the summary:
-&amp;lt;section&amp;gt; &amp;lt;header&amp;gt; &amp;lt;h2&amp;gt;Post Title&amp;lt;/h2&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;p&amp;gt;Post Summary&amp;lt;/p&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;Post Link&amp;quot;&amp;gt;Read More &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/section&amp;gt;  For each summary, we need to
- Replace &amp;ldquo;Post Title&amp;rdquo; with the real title. Replace &amp;ldquo;Post Summary&amp;rdquo; with a summary of the post. Replace &amp;ldquo;Post Link&amp;rdquo; with a link to the full post.</description>
+      <description>&lt;p&gt;I want my home page to show a list of my posts with the newest posts listed first.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,9 +36,7 @@ The layout for this uses sections to wrap the summary:
       <pubDate>Sat, 19 Jan 2019 12:24:22 -0700</pubDate>
       
       <guid>http://example.org/posts/hello-template/</guid>
-      <description>Today I&amp;rsquo;m going to build a simple home page template for my site.
-The home page is the big, splashy &amp;ldquo;you&amp;rsquo;re here!&amp;rdquo; page. It&amp;rsquo;s the first page that visitors see, so it usually has a different layout than any other page on your site. I use it to show summaries of recent posts, information on the site, and links to other content.
-The template for the home page is stored in layouts/index.</description>
+      <description>&lt;p&gt;Today I&amp;rsquo;m going to build a simple home page template for my site.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,10 +45,7 @@ The template for the home page is stored in layouts/index.</description>
       <pubDate>Sat, 19 Jan 2019 09:23:18 -0700</pubDate>
       
       <guid>http://example.org/posts/creating-a-post-archetype/</guid>
-      <description>My goal this morning is to create an archetype file for posts. I want to be able to do something like:
-$ hugo new posts/creating-a-post-archetype.md  From the previous post, we know that Hugo will look for archetypes/posts.md.
-It feels weird to me to use posts to create a single post. If I wanted, I could do:
-$ hugo new --kind=post posts/creating-a-post-archetype.md  That would tell Hugo to look for archetypes/post.</description>
+      <description>&lt;p&gt;My goal this morning is to create an archetype file for posts.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,9 +54,17 @@ $ hugo new --kind=post posts/creating-a-post-archetype.md  That would tell Hugo 
       <pubDate>Fri, 18 Jan 2019 15:47:35 -0700</pubDate>
       
       <guid>http://example.org/posts/first-look-at-archetypes/</guid>
-      <description>This post is about archetype files. Probably too much information, but it all starts with the archetype.
-What&amp;rsquo;s an Archetype file? Archetypes live in the archetypes/ directory in the root of your site. Hugo automatically creates a file there, default.md.
-$ ls -l archetypes/ total 8 drwxr-xr-x 3 mdhender staff 102 Jan 18 20:17 . drwxr-xr-x 10 mdhender staff 340 Jan 18 20:29 .. -rw-r&amp;ndash;r&amp;ndash; 1 mdhender staff 84 Jan 18 20:17 default.</description>
+      <description>&lt;p&gt;This post is about archetype files.
+Probably too much information, but it all starts with the archetype.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Starting with a Blank Slate</title>
+      <link>http://example.org/posts/starting-with-a-blank-slate/</link>
+      <pubDate>Thu, 17 Jan 2019 21:27:13 -0700</pubDate>
+      
+      <guid>http://example.org/posts/starting-with-a-blank-slate/</guid>
+      <description>&lt;p&gt;Canvas is a demonstration of building a site (and a theme) from the ground up.&lt;/p&gt;</description>
     </item>
     
   </channel>

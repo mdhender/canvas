@@ -1,11 +1,13 @@
 ---
 title: "First Look at Archetypes"
 date: 2019-01-18T15:47:35-07:00
-draft: true
+categories: ["posts"]
+tags: ["hugo"]
 ---
 
 This post is about archetype files.
 Probably too much information, but it all starts with the archetype.
+<!--more-->
 
 ## What's an Archetype file?
 

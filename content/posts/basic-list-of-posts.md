@@ -1,12 +1,12 @@
 ---
-draft: true
 title: "Basic List of Posts"
 date: 2019-01-19T13:58:46-07:00
 categories: ["posts"]
-tags: []
+tags: ["hugo"]
 ---
 
 I want my home page to show a list of my posts with the newest posts listed first.
+<!--more-->
 
 The layout for this uses sections to wrap the summary:
 

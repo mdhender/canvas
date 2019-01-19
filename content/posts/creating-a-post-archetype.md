@@ -1,12 +1,13 @@
 ---
-draft: true
 title: "Creating a Post Archetype"
 date: 2019-01-19T09:23:18-07:00
 categories: ["posts"]
-tags: []
+tags: ["hugo"]
 ---
 
 My goal this morning is to create an archetype file for posts.
+<!--more-->
+
 I want to be able to do something like:
 
 ```

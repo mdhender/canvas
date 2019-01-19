@@ -1,12 +1,12 @@
 ---
-draft: true
 title: "Hello Template"
 date: 2019-01-19T12:24:22-07:00
 categories: ["posts"]
-tags: []
+tags: ["hugo"]
 ---
 
 Today I'm going to build a simple home page template for my site.
+<!--more-->
 
 The home page is the big, splashy "you're here!" page.
 It's the first page that visitors see, so it usually has a different layout than any other page on your site.
