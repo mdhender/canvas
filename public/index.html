@@ -18,29 +18,65 @@
     </nav>
 
     <main>
-        <section>
-            <header>
-                <h2>Post One Title</h2>
-            </header>
-            <p>Post Summary</p>
-            <nav>
-                <ul>
-                    <li><a href="/">Read More &raquo;</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section>
-            <header>
-                <h2>Post Two Title</h2>
-            </header>
-            <p>Post Summary</p>
-            <nav>
-                <ul>
-                    <li><a href="/">Read More &raquo;</a></li>
-                </ul>
-            </nav>
-        </section>
+        
+            <section>
+                <header>
+                    <h2>Basic List of Posts</h2>
+                </header>
+                I want my home page to show a list of my posts with the newest posts listed first.
+The layout for this uses sections to wrap the summary:
+&lt;section&gt; &lt;header&gt; &lt;h2&gt;Post Title&lt;/h2&gt; &lt;/header&gt; &lt;p&gt;Post Summary&lt;/p&gt; &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;Post Link&quot;&gt;Read More &amp;raquo;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;/section&gt;  For each summary, we need to
+ Replace &ldquo;Post Title&rdquo; with the real title. Replace &ldquo;Post Summary&rdquo; with a summary of the post. Replace &ldquo;Post Link&rdquo; with a link to the full post.
+                <nav>
+                    <ul>
+                        <li><a href="/posts/basic-list-of-posts/">Read More &raquo;</a></li>
+                    </ul>
+                </nav>
+            </section>
+        
+            <section>
+                <header>
+                    <h2>Hello Template</h2>
+                </header>
+                Today I&rsquo;m going to build a simple home page template for my site.
+The home page is the big, splashy &ldquo;you&rsquo;re here!&rdquo; page. It&rsquo;s the first page that visitors see, so it usually has a different layout than any other page on your site. I use it to show summaries of recent posts, information on the site, and links to other content.
+The template for the home page is stored in layouts/index.
+                <nav>
+                    <ul>
+                        <li><a href="/posts/hello-template/">Read More &raquo;</a></li>
+                    </ul>
+                </nav>
+            </section>
+        
+            <section>
+                <header>
+                    <h2>Creating a Post Archetype</h2>
+                </header>
+                My goal this morning is to create an archetype file for posts. I want to be able to do something like:
+$ hugo new posts/creating-a-post-archetype.md  From the previous post, we know that Hugo will look for archetypes/posts.md.
+It feels weird to me to use posts to create a single post. If I wanted, I could do:
+$ hugo new --kind=post posts/creating-a-post-archetype.md  That would tell Hugo to look for archetypes/post.
+                <nav>
+                    <ul>
+                        <li><a href="/posts/creating-a-post-archetype/">Read More &raquo;</a></li>
+                    </ul>
+                </nav>
+            </section>
+        
+            <section>
+                <header>
+                    <h2>First Look at Archetypes</h2>
+                </header>
+                This post is about archetype files. Probably too much information, but it all starts with the archetype.
+What&rsquo;s an Archetype file? Archetypes live in the archetypes/ directory in the root of your site. Hugo automatically creates a file there, default.md.
+$ ls -l archetypes/ total 8 drwxr-xr-x 3 mdhender staff 102 Jan 18 20:17 . drwxr-xr-x 10 mdhender staff 340 Jan 18 20:29 .. -rw-r&ndash;r&ndash; 1 mdhender staff 84 Jan 18 20:17 default.
+                <nav>
+                    <ul>
+                        <li><a href="/posts/first-look-at-archetypes/">Read More &raquo;</a></li>
+                    </ul>
+                </nav>
+            </section>
+        
     </main>
 
     <aside>
@@ -48,10 +84,15 @@
             <h4>Recent Posts</h4>
             <nav>
                 <ul>
-                    <li><a href="/creating-a-post-archetype.html">Creating a Post Archetype</a></li>
-                    <li><a href="/first-look-at-archetypes.html">A First Look at Archetypes</a></li>
-                    <li><a href="/newsite.html">Initializing the site with Hugo</a></li>
-                    <li><a href="/">Home</a></li>
+                
+                    <li><a href="/posts/basic-list-of-posts/">Basic List of Posts</a></li>
+                
+                    <li><a href="/posts/hello-template/">Hello Template</a></li>
+                
+                    <li><a href="/posts/creating-a-post-archetype/">Creating a Post Archetype</a></li>
+                
+                    <li><a href="/posts/first-look-at-archetypes/">First Look at Archetypes</a></li>
+                
                 </ul>
             </nav>
         </section>

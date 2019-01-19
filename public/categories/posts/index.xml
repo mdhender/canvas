@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/categories/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Jan 2019 13:58:46 -0700</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/categories/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -44,17 +44,6 @@ The template for the home page is stored in layouts/index.</description>
 $ hugo new posts/creating-a-post-archetype.md  From the previous post, we know that Hugo will look for archetypes/posts.md.
 It feels weird to me to use posts to create a single post. If I wanted, I could do:
 $ hugo new --kind=post posts/creating-a-post-archetype.md  That would tell Hugo to look for archetypes/post.</description>
-    </item>
-    
-    <item>
-      <title>First Look at Archetypes</title>
-      <link>http://example.org/posts/first-look-at-archetypes/</link>
-      <pubDate>Fri, 18 Jan 2019 15:47:35 -0700</pubDate>
-      
-      <guid>http://example.org/posts/first-look-at-archetypes/</guid>
-      <description>This post is about archetype files. Probably too much information, but it all starts with the archetype.
-What&amp;rsquo;s an Archetype file? Archetypes live in the archetypes/ directory in the root of your site. Hugo automatically creates a file there, default.md.
-$ ls -l archetypes/ total 8 drwxr-xr-x 3 mdhender staff 102 Jan 18 20:17 . drwxr-xr-x 10 mdhender staff 340 Jan 18 20:29 .. -rw-r&amp;ndash;r&amp;ndash; 1 mdhender staff 84 Jan 18 20:17 default.</description>
     </item>
     
   </channel>

@@ -17,29 +17,19 @@
     </nav>
 
     <main>
-        <section>
-            <header>
-                <h2>Post One Title</h2>
-            </header>
-            <p>Post Summary</p>
-            <nav>
-                <ul>
-                    <li><a href="/">Read More &raquo;</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section>
-            <header>
-                <h2>Post Two Title</h2>
-            </header>
-            <p>Post Summary</p>
-            <nav>
-                <ul>
-                    <li><a href="/">Read More &raquo;</a></li>
-                </ul>
-            </nav>
-        </section>
+        {{ range where .Pages.ByPublishDate.Reverse "Section" "posts" }}
+            <section>
+                <header>
+                    <h2>{{ .Title }}</h2>
+                </header>
+                {{ .Summary }}
+                <nav>
+                    <ul>
+                        <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+                    </ul>
+                </nav>
+            </section>
+        {{ end }}
     </main>
 
     <aside>
@@ -47,10 +37,9 @@
             <h4>Recent Posts</h4>
             <nav>
                 <ul>
-                    <li><a href="/creating-a-post-archetype.html">Creating a Post Archetype</a></li>
-                    <li><a href="/first-look-at-archetypes.html">A First Look at Archetypes</a></li>
-                    <li><a href="/newsite.html">Initializing the site with Hugo</a></li>
-                    <li><a href="/">Home</a></li>
+                {{ range where .Pages.ByPublishDate.Reverse "Section" "posts" }}
+                    <li><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></li>
+                {{ end }}
                 </ul>
             </nav>
         </section>
