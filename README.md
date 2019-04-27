@@ -20,8 +20,6 @@ This blank slate is helpful if you're experienced and don't want to delete a bit
 The purpose of this post is to give newbies a leg-up by showing what needs to be done to get to a "working" site.
 It's not intended to explain "why" things need to be done (the documentation does a good job of that).
 
-# What you need to know before starting
-
 # Assumptions
 
 ## You can run command from the terminal
