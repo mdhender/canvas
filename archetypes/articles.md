@@ -1,10 +1,10 @@
 +++
 date = "{{ .Date }}"
 title = "{{ replace .Name "-" " " | title }}"
-type = "post"
+type = "article"
 draft = true
 +++
 
-Lorem ipsum summary of the post.
+Lorem ipsum summary of the article.
 <!--more-->
-Lorem ipsum rest of the post.
+Lorem ipsum rest of the article.

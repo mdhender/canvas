@@ -1,10 +1,9 @@
 +++
-date = "2019-04-27T13:41:09-06:00"
+date = "2019-04-27T15:07:51-06:00"
 title = "My Third Post"
 type = "post"
-draft = true
 +++
 
-Lorem ipsum summary.
+Lorem ipsum summary of the post.
 <!--more-->
-Lorem ipsum below the fold.
+Lorem ipsum rest of the post.

@@ -1,10 +1,6 @@
-+++
-date = "2019-04-27T13:40:28-06:00"
-title = "My Home Page"
-type = "post"
-draft = true
-+++
+---
+title: "Home Sweet Home"
+date: 2019-04-27T15:29:04-06:00
+---
 
-Lorem ipsum summary.
-<!--more-->
-Lorem ipsum below the fold.
+I like home pages.

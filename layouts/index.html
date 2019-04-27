@@ -1,16 +1,65 @@
+{{ partial "head.html" . }}
+
 <main>
-  <header>
-    <h1>{{.Title}}</h1>
-    {{ with .Params.subtitle }}<p>{{.}}</p>{{ end }}
-  </header>
-  <article>
-    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-    {{.Content}}
-  </article>
-  <footer>
-    <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
-    {{ range first 10 .Pages }}
-        {{ .Render "summary"}}
+  <section>
+    <!-- this section is populated from content/_index.md -->
+    <header>
+      <h1>{{.Title}}</h1>
+    </header>
+
+    <article>
+      {{.Content}}
+    </article>
+
+    <footer>
+      <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
+      {{ range first 10 .Pages }}
+          {{ .Render "summary"}}
+      {{ end }}
+    </footer>
+  </section>
+
+  <section>
+    <!-- this section is populated by pulling posts from the site -->
+    {{ range first 1 (where .Pages.ByPublishDate.Reverse "Section" "posts") }}
+        <article>
+            <header>
+              <h2>{{ .Title }}</h2>
+              <p><time datetime="{{.Date}}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></p>
+            </header>
+            {{ .Summary }}
+            <nav>
+              <ul>
+                <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+              </ul>
+            </nav>
+        </article>
     {{ end }}
-  </footer>
+    <footer>
+      <a href="{{ .Site.BaseURL }}/posts">All posts...</a>
+    </footer>
+  </section>
+
+  <section>
+    <!-- this section is populated by pulling articles from the site -->
+    {{ range first 1 (where .Pages.ByPublishDate.Reverse "Section" "articles") }}
+        <article>
+            <header>
+              <h2>{{ .Title }}</h2>
+              <p><time datetime="{{.Date}}">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></p>
+            </header>
+            {{ .Summary }}
+            <nav>
+              <ul>
+                <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+              </ul>
+            </nav>
+        </article>
+    {{ end }}
+    <footer>
+      <a href="{{ .Site.BaseURL }}/articles">All articles...</a>
+    </footer>
+  </section>
 </main>
+
+{{ partial "foot.html" .}}

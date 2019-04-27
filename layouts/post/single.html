@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+
+<main>
+  <section>
+    <header>
+      <h1>{{.Title}}</h1>
+    </header>
+
+    <article>
+      {{.Content}}
+    </article>
+
+    <footer>
+			<ul>
+				{{ with .PrevInSection }}<li><a href="{{ .Permalink }}">&laquo; {{ .Title }}</a></li>{{ end }}
+				{{ with .NextInSection }}<li><a href="{{ .Permalink }}">{{ .Title }} &raquo;</a></li>{{ end }}
+			</ul>
+    </footer>
+  </section>
+  <aside>
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home</a></p>
+      <li><a href="{{ .Section | absURL }}">Posts</a></p>
+      <li><a href="{{ .Site.BaseURL }}/articles">Articles</a></p>
+    </ul>
+  </aside>
+</main>
+
+{{ partial "foot.html" .}}
