@@ -1,55 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<title>Canvas</title>
-	<link rel="stylesheet" href="/css/canvas.css" type="text/css">
-</head>
-<body>
-    <header>
-        <h1><a href="/">Canvas</a></h1>
-        <p>the tabula rasa of templates</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="/">Posts</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        {{ range where .Pages.ByPublishDate.Reverse "Section" "posts" }}
-            <section>
-                <header>
-                    <h2>{{ .Title }}</h2>
-                </header>
-                {{ .Summary }}
-                <nav>
-                    <ul>
-                        <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
-                    </ul>
-                </nav>
-            </section>
-        {{ end }}
-    </main>
-
-    <aside>
-        <section>
-            <h4>Recent Posts</h4>
-            <nav>
-                <ul>
-                {{ range where .Pages.ByPublishDate.Reverse "Section" "posts" }}
-                    <li><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></li>
-                {{ end }}
-                </ul>
-            </nav>
-        </section>
-    </aside>
-      
-    <footer>
-        <ul>
-            <li>&copy; 2019 - Michael D Henderson</li>
-            <li><a href="https://github.com/mdhender/canvas">Github</a></li>
-        </ul>
-    </footer>
-</body>
-</html>
+<main>
+  <header>
+    <h1>{{.Title}}</h1>
+    {{ with .Params.subtitle }}<p>{{.}}</p>{{ end }}
+  </header>
+  <article>
+    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+    {{.Content}}
+  </article>
+  <footer>
+    <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
+    {{ range first 10 .Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </footer>
+</main>
