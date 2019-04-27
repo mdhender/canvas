@@ -48,11 +48,9 @@ Feel free to use any editor that you're comfortable with (for example, `vi` or `
 
 # Overview
 We're going to create a simple site for bloggers.
-The home page will show recent posts.
-We'll have two sections, one for posts and one for articles.
-(There's no difference between posts and articles; I'm doing this just to show how sections work.)
-
-1. Create the site
+1. The home page will show recent posts.
+2. We'll have two sections, one for posts and one for articles.
+3. There's no difference between posts and articles; I'm doing this just to show how sections work.
 
 # Create the site
 When you create a site, the command creates the bare minimum needed to generate a site.
