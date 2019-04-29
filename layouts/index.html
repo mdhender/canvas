@@ -30,13 +30,13 @@
             {{ .Summary }}
             <nav>
               <ul>
-                <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+                <li><a href="{{ .RelPermalink }}">Read More &raquo;</a></li>
               </ul>
             </nav>
         </article>
     {{ end }}
     <footer>
-      <a href="{{ .Site.BaseURL }}/posts">All posts...</a>
+      <a href="{{ "posts/" | absURL }}">All posts...</a>
     </footer>
   </section>
 
@@ -51,13 +51,13 @@
             {{ .Summary }}
             <nav>
               <ul>
-                <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+                <li><a href="{{ .RelPermalink }}">Read More &raquo;</a></li>
               </ul>
             </nav>
         </article>
     {{ end }}
     <footer>
-      <a href="{{ .Site.BaseURL }}/articles">All articles...</a>
+      <a href="{{ "articles/" | absURL }}">All articles...</a>
     </footer>
   </section>
 </main>

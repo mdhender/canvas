@@ -6,7 +6,7 @@ The instructions will work nearly as-is for Linux.
 Windows users will need to translate.
 
 # Introduction
-Hugo makes creating a new site eally easy, but the site will be useless until you do a bit of work on it.
+Hugo makes creating a new site really easy, but the site will be useless until you do a bit of work on it.
 That's sort of baked into the instructions.
 If you run the command with the `--help` flag, Hugo will remind you:
 
@@ -291,13 +291,13 @@ Use your editor to create the following files.
                 {{ .Summary }}
                 <nav>
                 <ul>
-                    <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+                    <li><a href="{{ .RelPermalink }}">Read More &raquo;</a></li>
                 </ul>
                 </nav>
             </article>
         {{ end }}
         <footer>
-        <a href="{{ .Site.BaseURL }}/posts">All posts...</a>
+        <a href="{{ "posts/" | absURL }}">All posts...</a>
         </footer>
     </section>
 
@@ -312,13 +312,13 @@ Use your editor to create the following files.
                 {{ .Summary }}
                 <nav>
                 <ul>
-                    <li><a href="{{ .Permalink | relURL }}">Read More &raquo;</a></li>
+                    <li><a href="{{ .RelPermalink }}">Read More &raquo;</a></li>
                 </ul>
                 </nav>
             </article>
         {{ end }}
         <footer>
-        <a href="{{ .Site.BaseURL }}/articles">All articles...</a>
+        <a href="{{ "articles/" | absURL }}">All articles...</a>
         </footer>
     </section>
     </main>
@@ -347,7 +347,7 @@ Use your editor to create the following files.
     <aside>
         <ul>
         <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ .Site.BaseURL }}/posts">Posts</a></p>
+        <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
         <li><a href="{{ .Section | absURL }}">Articles</a></p>
         </ul>
     </aside>
@@ -366,7 +366,7 @@ Use your editor to create the following files.
         <article>
         <ul>
             {{ range where .Pages.ByPublishDate.Reverse "Section" "articles" }}
-            <li><a href="{{ .Permalink | relURL }}">{{ .Title }} - <time datetime="{{.Date}}">{{ .Date.Format "2006/01/02 15:04:05" }}</time></a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .Title }} - <time datetime="{{.Date}}">{{ .Date.Format "2006/01/02 15:04:05" }}</time></a></li>
             {{ end }}
         </ul>
         </article>
@@ -375,8 +375,8 @@ Use your editor to create the following files.
     <aside>
         <ul>
         <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ .Site.BaseURL }}/posts">Posts</a></p>
-        <li><a href="{{ .Site.BaseURL }}/articles">Articles</a></p>
+        <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
+        <li><a href="{{ "articles/" | absURL }}">Articles</a></p>
         </ul>
     </aside>
     </main>
@@ -423,7 +423,7 @@ Use your editor to create the following files.
         <ul>
         <li><a href="{{ .Site.BaseURL }}">Home</a></p>
         <li><a href="{{ .Section | absURL }}">Posts</a></p>
-        <li><a href="{{ .Site.BaseURL }}/articles">Articles</a></p>
+        <li><a href="{{ "articles/" | absURL }}">Articles</a></p>
         </ul>
     </aside>
     </main>
@@ -441,7 +441,7 @@ Use your editor to create the following files.
         <article>
         <ul>
             {{ range where .Pages.ByPublishDate.Reverse "Section" "posts" }}
-            <li><a href="{{ .Permalink | relURL }}">{{ .Title }} - <time datetime="{{.Date}}">{{ .Date.Format "2006/01/02 15:04:05" }}</time></a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .Title }} - <time datetime="{{.Date}}">{{ .Date.Format "2006/01/02 15:04:05" }}</time></a></li>
             {{ end }}
         </ul>
         </article>
@@ -450,8 +450,8 @@ Use your editor to create the following files.
     <aside>
         <ul>
         <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ .Site.BaseURL }}/posts">Posts</a></p>
-        <li><a href="{{ .Site.BaseURL }}/articles">Articles</a></p>
+        <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
+        <li><a href="{{ "articles/" | absURL }}">Articles</a></p>
         </ul>
     </aside>
     </main>
