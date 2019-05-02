@@ -24,12 +24,24 @@ It's not intended to explain "why" things need to be done (the documentation doe
 
 ## You can run command from the terminal
 You will have to use the command line to run Hugo commands.
+
+## MacOS
 On the Mac, that means opening Spotlight, typing in "terminal", and double-clicking the `Terminal` application.
 
 Once you've done that, run the following command to confirm that the command line is working:
 
     $ echo hello
     hello
+
+If you don't see the output `hello`, then find someone that can help you access the command line.
+
+## Windows
+On Windows, click the Start button and type "Powershell" (without the quotes), and then click the Powershell tile. (Full instructions are available [here](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/starting-windows-powershell?view=powershell-6).)
+
+    C:\Users\mdhender> echo hello
+    hello
+
+Once you've done that, run the following command to confirm that the command line is working:
 
 If you don't see the output `hello`, then find someone that can help you access the command line.
 
