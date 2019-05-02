@@ -134,9 +134,29 @@ Disabling it seems like a reasonable approach.)
 Create a style sheet:
 
     $ cat static/css/canvas.css 
-    article, aside, body, footer, header, main, nav, section {
-        border: 1px solid black;
-        padding: 3px 3px 3px 3px;
+    html {
+        background-color: #fefefe
+    }
+
+    body {
+        color: #454545;
+        font-size: 18px;
+        margin: 2em auto;
+        max-width: 800px;
+        padding: 1em;
+        line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+        line-height:1.2
+    }
+
+    a {
+        color: #07a
+    }
+
+    a:visited {
+        color: #941352
     }
 
 I know, it's terrible.
@@ -406,9 +426,9 @@ Use your editor to create the following files.
     <!DOCTYPE html>
     <html>
     <head>
-    <meta charset="utf-8" />
-    <title>Canvas</title>
-    <link rel="stylesheet" href="/css/canvas.css" type="text/css">
+      <meta charset="utf-8" />
+      <title>Canvas</title>
+      <link rel="stylesheet" href="/css/canvas.css" type="text/css">
     </head>
     <body>
 ## layouts/post/single.html

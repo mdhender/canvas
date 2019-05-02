@@ -1,4 +1,24 @@
-article, aside, body, footer, header, main, nav, section {
-    border: 1px solid black;
-    padding: 3px 3px 3px 3px;
+html {
+    background-color: #fefefe
+}
+
+body {
+    color: #454545;
+    font-size: 18px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height:1.2
+}
+
+a {
+    color: #07a
+}
+
+a:visited {
+    color: #941352
 }
