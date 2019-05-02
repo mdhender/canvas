@@ -22,7 +22,7 @@ It's not intended to explain "why" things need to be done (the documentation doe
 
 # Assumptions
 
-## You can run command from the terminal
+## You can run commands from the terminal
 You will have to use the command line to run Hugo commands.
 
 ## MacOS
@@ -93,7 +93,7 @@ Make the `canvas` directory your working directory and confirm that Hugo created
 
     $ cd canvas
     /home/mdhender/go/src/github.com/mdhender/canvas
-    $ ls config.toml archetypes/default.md 
+    $ ls config.toml archetypes/default.md
     archetypes/default.md	config.toml
 
 If it did, you're ready to start on the plumbing needed for a basic site.
@@ -133,7 +133,7 @@ Disabling it seems like a reasonable approach.)
 # Create a style sheet for the site
 Create a style sheet:
 
-    $ cat static/css/canvas.css 
+    $ cat static/css/canvas.css
     html {
         background-color: #fefefe
     }
@@ -225,7 +225,7 @@ Use the `hugo new` command to create three posts and three articles to use for b
 Let's confirm that the correct archetypes were used.
 When we view the files, the type should match the path to the file (e.g., posts should have a type of "post").
 
-    $ cat content/posts/my-first-post.md 
+    $ cat content/posts/my-first-post.md
     +++
     date = "2019-04-27T15:07:22-06:00"
     title = "My First Post"
@@ -236,8 +236,8 @@ When we view the files, the type should match the path to the file (e.g., posts 
     Lorem ipsum summary of the post.
     <!--more-->
     Lorem ipsum rest of the post.
-    
-    $ cat content/articles/my-first-article.md 
+
+    $ cat content/articles/my-first-article.md
     +++
     date = "2019-04-27T15:07:32-06:00"
     title = "My First Article"
@@ -266,7 +266,7 @@ Use the `hugo new` command to create it:
 
 The file is not very useful as is:
 
-    $ cat content/_index.md 
+    $ cat content/_index.md
     ---
     title: ""
     date: 2019-04-27T15:29:04-06:00
@@ -285,7 +285,7 @@ Go ahead and update the title, remove the `draft` flag, and add some content to 
 
 # Create templates
 Templates are used to render content.
-We have 
+We have
 
 Note that I'm going to create two partials, head and foot, to hold some common HTML.
 
@@ -499,16 +499,16 @@ to the command line!
 Let's do that now:
     $ hugo server --buildDrafts
 
-                    | EN  
+                    | EN
     +------------------+----+
-    Pages            | 12  
-    Paginator pages  |  0  
-    Non-page files   |  0  
-    Static files     |  1  
-    Processed images |  0  
-    Aliases          |  0  
-    Sitemaps         |  1  
-    Cleaned          |  0  
+    Pages            | 12
+    Paginator pages  |  0
+    Non-page files   |  0
+    Static files     |  1
+    Processed images |  0
+    Aliases          |  0
+    Sitemaps         |  1
+    Cleaned          |  0
 
     Total in 7 ms
     Watching for changes in /home/mdhender/go/src/github.com/mdhender/canvas/{content,layouts,static}
@@ -529,16 +529,16 @@ Then run the following command:
 
     $ hugo
 
-                    | EN  
+                    | EN
     +------------------+----+
-    Pages            | 12  
-    Paginator pages  |  0  
-    Non-page files   |  0  
-    Static files     |  1  
-    Processed images |  0  
-    Aliases          |  0  
-    Sitemaps         |  1  
-    Cleaned          |  0  
+    Pages            | 12
+    Paginator pages  |  0
+    Non-page files   |  0
+    Static files     |  1
+    Processed images |  0
+    Aliases          |  0
+    Sitemaps         |  1
+    Cleaned          |  0
 
     Total in 9 ms
     $ ll public
