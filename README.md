@@ -378,9 +378,9 @@ Use your editor to create the following files.
     </section>
     <aside>
         <ul>
-        <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
-        <li><a href="{{ .Section | absURL }}">Articles</a></p>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ "posts/" | absURL }}">Posts</a></li>
+        <li><a href="{{ .Section | absURL }}">Articles</a></li>
         </ul>
     </aside>
     </main>
@@ -406,9 +406,9 @@ Use your editor to create the following files.
 
     <aside>
         <ul>
-        <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
-        <li><a href="{{ "articles/" | absURL }}">Articles</a></p>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ "posts/" | absURL }}">Posts</a></li>
+        <li><a href="{{ "articles/" | absURL }}">Articles</a></li>
         </ul>
     </aside>
     </main>
@@ -453,9 +453,9 @@ Use your editor to create the following files.
     </section>
     <aside>
         <ul>
-        <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ .Section | absURL }}">Posts</a></p>
-        <li><a href="{{ "articles/" | absURL }}">Articles</a></p>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ .Section | absURL }}">Posts</a></li>
+        <li><a href="{{ "articles/" | absURL }}">Articles</a></li>
         </ul>
     </aside>
     </main>
@@ -481,9 +481,9 @@ Use your editor to create the following files.
 
     <aside>
         <ul>
-        <li><a href="{{ .Site.BaseURL }}">Home</a></p>
-        <li><a href="{{ "posts/" | absURL }}">Posts</a></p>
-        <li><a href="{{ "articles/" | absURL }}">Articles</a></p>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ "posts/" | absURL }}">Posts</a></li>
+        <li><a href="{{ "articles/" | absURL }}">Articles</a></li>
         </ul>
     </aside>
     </main>
